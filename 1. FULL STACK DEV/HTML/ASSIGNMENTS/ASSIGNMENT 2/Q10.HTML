@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q9</title>
+  </head>
+  <body>
+    <font size="5">
+      <h1 align="center">&nbsp;&nbsp;&nbsp;<u>Registration Form</u></h1>
+    </font>
+    <div style="align-items: center;" align = "center">
+      <form
+      action="H:\REVAMP\1. FULL STACK DEV\HTML\DAY_2\signup.js"
+      method="get"
+      style="border-radius: 20px; width: 20%; margin-top: 10px; padding: 5px"
+    >
+      <fieldset align = "left">
+        <fieldset style="border: none">
+          <label for="name">Enter your name :</label>
+          <input
+            type="text"
+            name="username"
+            id="name"
+            placeholder="Selena Doe"
+            required
+          />
+        </fieldset>
+        <fieldset style="border: none">
+          <label for="mail"
+            >Enter your mail :
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="abc@gmail.com"
+              required
+            />
+          </label>
+        </fieldset>
+        <fieldset style="border: none">
+         <label for="password">Enter your password (8-15 characters):</label>
+         <input   (?!000)([0-6]\d{2}|7([0-6]\d|7[012]))([ -])?(?!00)\d\d\3(?!0000)\d{4}
+           type="password"
+           name="password"
+           id="password"
+           minlength="8"
+           maxlength="15"
+           pattern="(a-z,A-Z){6-10}(0-9){7-3}(@){1}(.){1}"
+           required
+         />
+          </label>
+        </fieldset>
+        <fieldset style="border: none">
+          <label for="submit">
+            <input type="submit" value="SUBMIT">
+          </label>
+        </fieldset>
+      </fieldset>
+    </form>
+    </div>
+    
+  </body>
+</html>
