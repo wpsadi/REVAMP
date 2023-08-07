@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Q9</title>
+    <title>Q10</title>
   </head>
   <body>
-    <font size="5">
+    <font size="6">
       <h1 align="center">&nbsp;&nbsp;&nbsp;<u>Registration Form</u></h1>
     </font>
-    <div style="align-items: center;" align = "center">
+    <div style="align-items: center; font-size: larger ;" align = "center">
       <form
-      action="H:\REVAMP\1. FULL STACK DEV\HTML\DAY_2\signup.js"
+      action="google.com"
       method="get"
-      style="border-radius: 20px; width: 20%; margin-top: 10px; padding: 5px"
+      style="border-radius: 20px; width: 20%; margin-top: 10px; padding: 10px;"
     >
       <fieldset align = "left">
         <fieldset style="border: none">
@@ -34,21 +34,31 @@
               name="mail"
               id="mail"
               placeholder="abc@gmail.com"
+              pattern=".+@gmail.com"
               required
             />
           </label>
         </fieldset>
         <fieldset style="border: none">
-         <label for="password">Enter your password (8-15 characters):</label>
-         <input   (?!000)([0-6]\d{2}|7([0-6]\d|7[012]))([ -])?(?!00)\d\d\3(?!0000)\d{4}
+         <label for="password">Enter your password <br />(8-15 characters):</label>
+         <input 
            type="password"
            name="password"
            id="password"
            minlength="8"
            maxlength="15"
-           pattern="(a-z,A-Z){6-10}(0-9){7-3}(@){1}(.){1}"
            required
          />
+          </label>
+        </fieldset>
+        <fieldset style="border: none">
+         <label for="checkbox">
+         <input
+           type="checkbox"
+           name="checkbox"
+           id="checkbox"
+           required
+         /> I agree to the Terms & Conditions
           </label>
         </fieldset>
         <fieldset style="border: none">
