@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Forms</title>
+</head>
+<body>
+   <h1>Forms in HTML</h1>
+   <!-- forms :
+            action = where the data is to be send 
+            method : 
+                  + get : for regular data / google search data
+                  + post : for sensitive data / data related to signups -->
+   <form action="/signup.js" method="get"></form>
+   <label for="usermail">Enter your mail:</label> <!-- for in label and id in input are linked here due to same values-->
+   <input type="email" name="email" id="usermail" placeholder="Enter your mail">
+   <!--placeholder will add data which will be not present but value data is to be deleted before new data is added-->
+   <input type="email" name="email" id="usermail" value="Enter your mail"> <!-- without id with same value as for of label linked will not be present -->
+   <br />
+   <input type="color" name="" id="">
+   <br />
+   <input type="date" name="" id="">
+   <br />
+   <input type="datetime" name="" id="">
+   <br />
+   <input type="month" name="" id="">
+   <br />
+   <input type="datetime-local" name="" id="">
+   <br />
+   <input type="file" name="" id="">
+   <br />
+   <input type="week" name="" id="">
+   <br />
+   <input type="text"> <!-- simple text -->
+   <br />
+   <input type="url" name="" id="">
+   <br />
+   <input type="number" name="" id="" >
+   <br />
+   <input type="time" name="" id="">
+   <br />
+   <input type="tel" name="" id="">
+   <br />
+   <input type="range" name="" id="">
+   <br />
+   <input type="button" value="Submit">
+   <br />
+   <label for="checkbox">superman</label>
+   <input type="checkbox" name="" id="">
+   <label for="checkbox">batman</label>
+   <input type="checkbox" name="" id="">
+   <br />
+   <input type="hidden" name="">
+   <br>
+   <input type="image" src="" alt="">
+   <br>
+   <input type="password" name="" id="" pattern="">
+   <br>
+   <input type="reset" value="">
+   <br>
+   <label for="number">1</label>
+   <input type="radio" name="" id="number">
+   <label for="number">2</label>
+   <input type="radio" name="" id="number">
+   <label for="number">3</label>
+   <input type="radio" name="" id="number">
+   <br>
+   <!-- selects  -->
+   <select name="" id="human">
+      <option value="select" disabled>select</option>
+      <option value="1">human</option>
+      <option value="2">uman</option>
+      <option value="3">man</option>
+   </select>
+</body>
+</html>
