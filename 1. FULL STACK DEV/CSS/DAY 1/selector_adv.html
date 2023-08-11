@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECTOR</title>
+    <style>
+      h1:hover {
+        background-color: #cd5c5c;
+      }
+      button {
+        background-color: #5f8f4f;
+        display: block;
+      }
+      a:active {
+        background-color: #f109;
+      }
+      p::after {
+        /* same goes for before too */
+        content: " - Remember this";
+      }
+      input:checked {
+        /* property to be applied only on checked items */
+        height: 50px;
+        width: 50px;
+      }
+      div :first-child {
+        background-color: #dba7bf;
+      }
+      div :last-child {
+        background-color: #8b77bf;
+      }
+      div :nth-child(even) {
+        background-color: #d907bf;
+      }
+
+      /* special pseudo selectors */
+     article  p::after{
+         content: "MAJORLY ANNOYING TRAITS";
+         font-style: oblique;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat assumenda
+      tempora consectetur officiis delectus provident quidem quas dignissimos,
+      esse incidunt!
+    </h1>
+    <button>LOGIN</button>
+    <a href="www.google.com">GOOGLE</a>
+    <p>Lorem ipsum dolor sit amet.'</p>
+    <input type="checkbox" />male <input type="checkbox" />female
+    <input type="radio" name="1" id="" />ONE
+    <input type="radio" name="1" id="" />TWO
+    <!-- The radio group must have share the same name (the value of the name attribute) to be treated as a group. Once the radio group is created, selecting any radio button in that group automatically deselects any other selected radio button in the same group -->.
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing 1.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing 2.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing 3.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing 1.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing 2.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing 3.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing 3.</p>
+    </div>
+
+    <article>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+         exercitationem error saepe culpa velit, deserunt sint possimus, non
+         veritatis aliquid, commodi esse ut illo eos consectetur similique eaque
+         modi! Libero quisquam quibusdam placeat adipisci, sequi rerum officiis qui
+         enim ullam eaque excepturi aperiam sed labore inventore! Eum dolor veniam
+         cupiditate.</p></article>
+
+  </body>
+</html>

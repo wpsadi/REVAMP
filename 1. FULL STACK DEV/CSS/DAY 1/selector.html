@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector in CSS</title>
+    <style>
+      /* universal selector */
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+
+      /* type/tag selector */
+      /* h1 {
+        margin-left: 20px;
+      } */
+
+      /* class selector */
+      .broth {
+        color: #fab3b3;
+      }
+
+      /* id selector */
+      #brth {
+        font-style: italic;
+      }
+
+      /* anchor tag selectors */
+      a[target="_blank"] {
+        color: #deb887;
+      }
+      a[target="_parent"] {
+        color: #925b12;
+      }
+      a {
+        color: #0c0c0c;
+      }
+
+      /* group selectors */
+      h1,
+      h2,
+      h3 {
+        font-style: oblique;
+      }
+
+      /* combination selectors */
+      ul li {
+        margin-left: 100px;
+      }
+
+      /* direct child selectors */
+      header > nav > ul > li > a {
+         font-weight: bold;
+      }
+      /* sibling selector */
+      a ~ p{
+         text-decoration: underline ;
+      }
+      /* just adjacent sibling */
+      h1 + h2{
+         font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, in?</h1>
+    <h2 class="broth">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel aliquid
+      praesentium blanditiis fugiat quis nam!
+    </h2>
+    <h3 id="brth">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis
+      ullam eos tenetur velit doloribus optio minima quam reprehenderit labore?
+    </h3>
+    <a href="google.com">VVVVV</a>
+    <a target="_blank" href="youtube.com">WWWWW</a>
+    <a target="_parent" href="yahoo.com">YYYY</a> -->
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, in?</h1>
+    <h2>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel aliquid
+      praesentium blanditiis fugiat quis nam!
+    </h2>
+    <h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis
+      ullam eos tenetur velit doloribus optio minima quam reprehenderit labore?
+    </h3>
+    <ul>
+      <li>ONE</li>
+      <li>ONE</li>
+      <li>ONE</li>
+    </ul>
+    <li>TWO</li>
+
+    <header>
+      <a href="bing.com">Bing</a>
+      <p>hello friens</p>
+      <div>
+         <p>well me</p>
+      </div>
+      <nav>
+         <ul>
+            <li><a href="www.naukri.com">naukri</a></li>
+            <li><a href="www.pwskills.com">logo</a></li>
+         </ul>
+      </nav>
+    </header>
+    <a href="google.com">VVVVV</a>
+    <a target="_blank" href="youtube.com">WWWWW</a>
+    <a target="_parent" href="yahoo.com">YYYY</a>
+  </body>
+</html>

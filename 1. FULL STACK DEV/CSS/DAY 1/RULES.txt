@@ -1,0 +1,30 @@
+Inline CSS : in the tags itself like ; like in paragraph tag of h1 tag;
+Internal CSS : in the style tag in the head ;
+Eternal CSS : in the new css file ;
+
+
+Priority : inline > (internal = external)
+externl and internal follow the order in which they are written
+i.e., jo last me likha gya hai wahi satya hai
+
+
+ use *** ! important *** to make that property a Priority
+
+Cascading order : jo baad me likha gya hai whi satya hai
+
+CSS specificity : Priority would be: inline > id > class > element
+
+ CSS Properties
+
+ * color -
+ * font -
+ * text-decoration like underline and all
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
