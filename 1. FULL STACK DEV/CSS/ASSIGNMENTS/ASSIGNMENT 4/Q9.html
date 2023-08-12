@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q9</title>
+    <style>
+      input:focus {
+        background-image: linear-gradient(
+          to right,
+          #ec8e8e,
+          #eeca88,
+          #e4e473,
+          #6cdd6c,
+          #8989e2,
+          #b976e9,
+          #e9b2e9
+        );
+      }
+      body {
+        display: block;
+        text-align: center;
+      }
+      h1 {
+        text-decoration: underline;
+        text-shadow: 2px 2px rgb(8, 148, 55);
+        color: darkolivegreen;
+        font-size: 60px;
+      }
+      form {
+        display: inline-block;
+        border-style: solid;
+      }
+      fieldset {
+        border: none;
+        text-align: left;
+      }
+      [type="submit"] {
+        margin-left: 30%;
+      }
+      input:checked {
+        background-color: rgb(180, 14, 14);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Registration Form</h1>
+      <form action="https://www.google.co.in/" method="get">
+        <fieldset>
+          <fieldset>
+            <legend for="name">Enter your name :</legend>
+            <input
+              class="name"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Jane Doe"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <legend for="number">Enter your contact number :</legend>
+            <input
+              class="number"
+              type="tel"
+              name="number"
+              id="number"
+              placeholder="1234567890"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <legend for="usermail">Enter your usermail :</legend>
+            <input
+              class="usermail"
+              type="usermail"
+              name="usermail"
+              id="useremail"
+              placeholder="abc@gmail.com"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <legend for="course">Choose the course :</legend>
+            <input type="radio" name="course" id="course" required />Web
+            Development <br />
+            <input
+              class=""
+              type="radio"
+              name="course"
+              id="course"
+              required
+            />Android Development
+          </fieldset>
+          <fieldset>
+            <input
+              class=""
+              type="submit"
+              name="submit"
+              id="submit"
+              value="SUBMIT"
+            />
+          </fieldset>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
