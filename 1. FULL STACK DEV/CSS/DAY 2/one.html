@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>display_layout_float</title>
+   <style>
+      /* for display and layout */
+      h1,
+      .uneal,
+      li {
+         display: none;
+         background-color: #994599;
+         color: rgb(253, 145, 3);
+         border: 10px solid green;
+         padding: 10px;
+      }
+
+      .item {
+         display: none;
+         background-color: #f1bbf1;
+         color: rgb(73, 40, 0);
+         border: 10px solid rgb(116, 173, 116);
+         padding: 10px;
+      }
+
+      img {
+         display: none;
+         /* removes the element altogether */
+         opacity: 0;
+         /* consumes the space i.e., image is there but fully opaque */
+         visibility: hidden;
+         /* consumes the space i.e., image is there but fully invisible */
+      }
+   </style>
+   <style>
+      /* for learning float layout */
+      .float-div  {
+         display: none;
+         background-color: rosybrown;
+         height: 200px;
+         width: 200px;
+         margin: 0px 50px;
+         float: right;
+      }
+      /* .first {
+         display: none;
+      } */
+      .float-left {
+         background-color: rosybrown;
+         height: 200px;
+         width: 200px;
+         margin: 0px 50px;
+         border: 20px solid #994599 ;
+         text-align: center;
+         float: left;
+      }
+      .float-right {
+         background-color: rosybrown;
+         height: 200px;
+         width: 200px;
+         margin: 0px 50px;
+         border: 20px solid #994599 ;
+         text-align: center;
+         float: right;
+      }
+      .para {
+         clear: both;
+         padding: 40px;
+         border: 20px solid #994599 ;
+         background-color: rosybrown;
+      }
+   </style>
+</head>
+
+<body>
+   <h1>Normal layout</h1>
+   <ol>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+   </ol>
+   <div>
+      <div class="item1 item">one</div>
+      <div class="item2 item">two</div>
+      <div class="item3 item">three</div>
+   </div>
+   <p class="uneal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur!</p>
+   <p class="uneal">text before image :</p>
+   <img src="601d2030d2be44afc11206850d6a3285.jpg" alt="sorry" width="500px">
+   <p class="uneal">text after image :</p>
+
+   <!-- float is an old layout type -->
+
+   <p class="first" style="display:none;">
+      <div class="float-div"></div>
+      <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est maxime nulla quaerat, laudantium distinctio quibusdam
+      beatae, quasi provident eos dolorem iusto exercitationem corrupti, nesciunt repudiandae quas deleniti libero quae
+      error ea sunt rerum? Nulla consectetur sed, ratione sit, non debitis, id hic asperiores temporibus possimus atque qui
+      in velit modi. -->
+   </p>
+   <div>
+      <div class="float-left">LEFT</div>
+      <div class="float-right">RIGHT</div>
+      <p class="para">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi mollitia et alias nulla autem in deleniti eius quas ratione omnis, labore amet soluta voluptas nam doloribus velit nesciunt non recusandae facere beatae perspiciatis repellat asperiores. Minus cumque doloremque tempora distinctio aliquam nam eum. Enim quae pariatur, obcaecati magnam incidunt quod? Nostrum quis nemo obcaecati excepturi tenetur praesentium autem, distinctio eaque repellendus, dignissimos, deserunt dolor reprehenderit ab odio totam exercitationem dolorum nulla veniam dolores laborum. Pariatur dolor, esse tempora iusto repudiandae est molestiae expedita sapiente quas, cum a ut velit itaque, sunt quidem. Vel eligendi rerum, tenetur dolorem nulla nobis sint.
+      </p>
+   </div>
+</body>
+
+</html>

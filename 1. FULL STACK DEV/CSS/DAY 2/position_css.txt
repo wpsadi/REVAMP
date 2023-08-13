@@ -1,0 +1,16 @@
+CSS Layout
+
+layout types
+
+   normal layout(default)
+   float layout
+   flex layout
+   grid layout
+
+Positioning techniques
+
+   Static Positioning (default)
+   relative Positioning (relative to another tag)
+   absolute Positioning (fixed position without care about other elements)
+   fixed Positioning (gets stuck to the screen)
+   sticky Positioning (mixture of relativeand fixed)
