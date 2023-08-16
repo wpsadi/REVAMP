@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Q7</title>
+   <style>
+      .heading {
+         text-align: center;
+      }
+      .container {
+         height: 500px;
+         width: 500px;
+         text-align: center;
+         position: absolute;
+      }
+      .card {
+         width: 170px;
+         height: 250px;
+         border-radius: 3%;
+         border: 2px solid black;
+      }
+      .card1 {
+         background-color: skyblue;
+         position: sticky;
+         z-index: 0;
+         
+      }
+      
+      .card2 {
+         background-color: #4cd14c;
+         position: relative;
+         bottom: 200px;
+         left: 20px;
+         z-index: 1;
+      }
+      
+      .card3 {
+         background-color: yellow;
+         position: relative;
+         bottom: 400px;
+         left: 40px;
+         z-index: 2;
+      }
+      .card1:hover {
+         z-index: 3;
+      }
+      .card2:hover {
+         z-index: 4;
+      }
+      .image {
+         height: 150px;
+         width: 120px;
+         border: 2px solid black;
+         background-color: black;
+         position: relative;
+         top: 20px;
+      }
+      .content {
+         font-weight: unset;
+         font-size: 20px;
+      }
+
+   </style>
+</head>
+<body>
+   <h1 class="heading">Hover to unveil the pokemon</h1>
+   <div class="container">
+      <div class="card card1">
+         <h1 class="content">Card 1</h1> 
+
+         <img src=".\ASSETS\pokemon-venasaur.png" alt="" class="image image1">
+      </div>
+      <div class="card card2">
+         <h1 class="content">Card 2</h1> 
+
+         <img src=".\ASSETS\pokemon-dragonite.png" alt="" class="image image2">
+      </div>
+      <div class="card card3">
+         <h1 class="content">Card 3</h1> 
+
+         <img src=".\ASSETS\pokemon-blastoise.png" alt="" class="image image3">
+      </div>
+   </div>
+</body>
+</html>
