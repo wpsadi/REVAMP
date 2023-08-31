@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Grid Template Area</title>
+   <style>
+      .container {
+         display: grid;
+         height: 100vh;
+         grid-template-areas: 
+         "header header main"
+         "sidebar sidebar main"
+         "main main main";
+      }
+      .header {
+         grid-area: header;
+         background-color: red;
+      }
+      .footer {
+         grid-area: footer;
+         background-color: rgb(95, 168, 10);
+         
+      }
+      .sidebar {
+         grid-area: sidebar;
+         background-color: rgb(19, 68, 133);
+        
+      }
+      .main {
+         grid-area: main;
+         background-color: rgb(128, 98, 98);
+         z-index: 2;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="header">Header</div>
+      <div class="footer">Footer</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="main">Main Content</div>
+   </div>
+</body>
+</html>
