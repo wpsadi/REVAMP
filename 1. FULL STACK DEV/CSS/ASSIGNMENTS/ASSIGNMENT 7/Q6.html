@@ -9,12 +9,49 @@
       .container {
          background-color: #202124;
          color: white;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-top: 100px;
+      }
+      h1 {
+         font-size: 100px;
+      }
+      .sub-container {
+         border: 1px solid white;
+         display: flex;
+         width: 50%;
+         border-radius: 50px;
+         justify-content: space-between;
+         padding: 5px;
+      }
+      .image {
+         width: 40px;
+      }
+      .search {
+         margin: 0px 10px;
+      }
+      .flex-end {
+         display: flex;
+         margin: 0px 10px;
+         gap: 30px;
+      }
+      hr{
+         position: relative;
+         left: -220px;
       }
    </style>
 </head>
 <body class="container">
+   <h1>Google</h1>
    <div class="sub-container">
-      <h1>Google</h1>
+      <img src=".\media\media-Q6\search-icon.png" alt="Ooops! Error" class="image search">
+      <hr>
+      <div class="flex-end">
+         <img src=".\media\media-Q6\voice.png" alt="Ooops! Error" class="image voice">
+         <img src=".\media\media-Q6\lens.png" alt="Ooops! Error" class="image lens">
+      </div>
+      
    </div>
    
 </body>

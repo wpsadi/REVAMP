@@ -5,18 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Q4</title>
     <style>
+      body {
+        font-family: sans-serif;
+        margin: 0px 50px;
+        font-size: 18px;
+      }
       .container {
-         display: flex;
-         justify-content: space-between;
-         border: 1px solid;
-         padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        position: sticky;
+        top: 0px;
       }
       .logo {
-         height: 30px;
-         width: 30px;
+        height: 30px;
+        width: 30px;
       }
       .sub-contain {
-         display: flex;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .sub-contain-links {
+        display: flex;
+        gap: 40px;
+      }
+      .link {
+        text-decoration: none;
+        color: #1a73e8;
+        padding: 8px 18px;
+      }
+      .link1 {
+        background-color: #1a73e8;
+        border: 1px solid #1a73e8;
+        color: white;
+        border-radius: 4px;
+      }
+      .link2 {
+        border: 1px solid silver;
+        color: #1a73e8;
+        border-radius: 5px;
+      }
+      .sub-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0px;
+        height: 420px;
+        gap: 20px;
+      }
+      .f-item {
+        display: flex;
+        width: 350px;
+        justify-content: space-between;
+      }
+      .image {
+        position: relative;
+        top: -40px;
       }
     </style>
   </head>
@@ -30,20 +75,23 @@
         />
         <p>Gmail</p>
       </div>
-      <div class="sub-contain">
+      <div class="sub-contain-links">
         <a
+          class="link"
           href="https://workspace.google.com/products/gmail/index.html"
           target="_blank"
         >
           For Work
         </a>
         <a
+          class="link link2"
           href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser"
           target="_blank"
         >
           Sign In
         </a>
         <a
+          class="link link1"
           href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=SignUp"
           target="_blank"
         >
@@ -52,31 +100,38 @@
       </div>
     </header>
     <hr />
-    <main class="sub-container">
-      <h1>Secure, smart, and easy to use email</h1>
-      <p>
-        Get more done with Gmail. Now integrated with Google Chat, Google Meet,
-        and more, all in one palce
-      </p>
-      <div class="f-item">
-        <a
-          href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=SignUp"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Create an account</a
-        >
-        <a
-          href="https://workspace.google.com/products/gmail/index.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          >For Work</a
-        >
+    <main  class="sub-container">
+      <div>
+        <h1 style="font-size: 60px; font-weight: lighter; margin-bottom: 10px;">Secure, smart, <br>and easy to use <br>email</h1>
+        <p>
+          Get more done with Gmail. Now integrated with Google <br>Chat, Google Meet,
+          and more, all in one palce
+        </p>
+        <div class="f-item">
+          <a
+            class="link link1"
+            href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=SignUp"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Create an account</a
+          >
+          <a
+            class="link"
+            href="https://workspace.google.com/products/gmail/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >For Work</a
+          >
+        </div>
       </div>
+      <div>
       <img
         src=".\media\media-Q4\gmail-image.png"
         alt="Ooops! There seems to be a problem"
         class="image"
       />
+    </div>
     </main>
+    <hr>
   </body>
 </html>
