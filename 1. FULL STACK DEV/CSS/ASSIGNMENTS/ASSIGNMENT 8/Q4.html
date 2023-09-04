@@ -11,13 +11,15 @@
          border-radius: 20px;
       }
       .container {
+         display: grid;
          padding: 10px;
       }
       .sub-container1 {
          display: grid;
          grid-template-columns: repeat(3, 300px);
          justify-content: space-evenly;
-         padding: 5px;
+         align-self: last baseline;
+         padding: 40px 0px 20px 0px;
       }
       .sub-containers {
          display: grid;
@@ -45,57 +47,105 @@
          border-bottom: 1px solid black;
       }
       .sub-container2 {
-         display: grid;
-         height: 350px;
-         background-color: #2b1e16;
-         border-radius: 10px;
-         color: wheat;
-         margin-top: 20px;
-         margin-bottom: 0px;
-         font-size: 20px;
+        display: grid;
+        grid-auto-flow: column;
+        background-color: #2b1e16;
+        height: 400px;
+        column-gap: 100px;
+        padding: 0px 80px 30px 80px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
       }
-      .sub-container_1 {
+      .item_1{
          display: grid;
-         grid-template-columns: repeat(3, 300px);
-         justify-content: space-around;
-         align-content: flex-end;
-         margin-left: 120px;
+         align-self: last baseline;
+         justify-items: center;
       }
-      .sub-container_2 {
+      .item_2{
          display: grid;
-         justify-content: center;
-         align-content: center;
+         align-self: last baseline;
+         justify-items: center;
       }
-      .nav-links {
+      .item_3{
          display: grid;
-         font-size: 16px;
-         justify-content: flex-start;
-         margin-left: -20px;
+         align-self: last baseline;
+         justify-items: center;
       }
-      .nav-link, .more {
+      .logos {
+        height: 100px;
+        width: 100px;
+        border: 2px solid #aaa;
+        background-color: #aaa;
+        border-radius: 10px;
+        padding: 20px 30px;
+      }
+      .item-image {
+         display: grid;
+         justify-items: center;
+         padding: 20px;
+      }
+      .item-heading {
+         color: white;
          font-size: 28px;
+         padding-bottom: 20px;
       }
-      .more-list, .link-list {
-         margin-left: 30px;
-      }
-      .learn_more {
-         display: grid;
-         margin-left: -120px;
-         font-size: 16px;
-         margin-right: 150px;
-      }
-      a {
+      .item-content {
          color: #865307;
-         text-decoration: none;
+         font-size: 16px;
+         text-align: center;
       }
-      .logo {
-         height: 200px;
-         width: 200px;
-      }
+     
+      
    </style>
 </head>
 <body>
+
    <div class="container">
+   <div class="sub-container2">
+      <div class="item_1">
+        <div class="item-image">
+          <img
+            src=".\media\no-min-order.png"
+            alt="Ooops! An error"
+            class="logos"
+          />
+        </div>
+        <div class="item-heading">No Mininmum Order</div>
+        <div class="item-content">
+          Order in for yourself of for the group, with no restrictions on
+          order value
+        </div>
+      </div>
+      <div class="item_2">
+        <div class="item-image">
+          <img
+            src=".\media\live-location.png"
+            alt="Ooops! An error"
+            class="logos"
+          />
+        </div>
+        <div class="item-heading">Live Order Tracking</div>
+        <div class="item-content">
+          Know where your order is all times, from the resturant to your
+          doorstep
+        </div>
+      </div>
+      <div class="item_3">
+        <div class="item-image">
+          <img
+            src=".\media\fast-delivery.png"
+            alt="Ooops! An error"
+            class="logos"
+          />
+        </div>
+        <div class="item-heading">Lightning-Fast Delivery</div>
+        <div class="item-content">
+          Experience Swiggy's super fast delivery for food delivered fresh &
+          on time
+        </div>
+      </div>
+    </div>
+   
       <div class="sub-container1">
          <div class="sub-containers container1">
             <div class="content-image"><img src=".\media\food.png" alt="Ooops! An error" class="image"></div>
@@ -112,31 +162,6 @@
             <div class="content heading">Nightlife & Clubs</div>
             <div class="content">Explore the city's top nightlife outlets & Book tables.</div>
          </div>
-      </div>
-
-      <div class="sub-container2">
-         <div class="sub-container_1">
-            <div class="items">
-               <div><img src=".\media\favicon.png" alt="Ooops! An error" class="logo"></div>
-               <div class="item" style="color: green; font-weight: bolder; display: inline; margin:10px 2px 0px -5px;">HEALTHY</div>
-               <div class="item" style="color: yellow; font-weight: bolder; display: inline;">FOOD</div>
-            </div>
-            <div class="items nav-links">
-               <div class="nav-link">Navigation Links</div>
-               <div><a href="#" target="_blank" class="link-list">Home</a></div>
-               <div><a href="#" target="_blank" class="link-list">About</a></div>
-               <div><a href="#" target="_blank" class="link-list">Contact</a></div>
-               <div><a href="#" target="_blank" class="link-list">Login</a></div>
-            </div>
-            <div class="items learn_more">
-               <div class="more">Learn More</div>
-               <div><a href="#" class="more-list">Privacy</a></div>
-               <div><a href="#" class="more-list">Security</a></div>
-               <div><a href="#" class="more-list">Terms</a></div>
-               <div><a href="#" class="more-list">Sitemap</a></div>
-            </div>
-         </div>
-         <div class="sub-container_2">&#169 Copyright All rights Reserved</div>
       </div>
    </div>
 </body>
