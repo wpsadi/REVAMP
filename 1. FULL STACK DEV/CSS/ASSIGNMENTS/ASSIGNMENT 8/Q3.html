@@ -1,137 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Q3</title>
-   <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3</title>
+    <style>
       body {
-         font-family: sans-serif;
-         height: fit-content;
-         border: 4px solid black;
+        font-family: sans-serif;
+        height: fit-content;
+        border: 4px solid black;
       }
       .container {
-         display: grid;
-         grid-template-columns: repeat(2 , 1fr);
-         grid-template-rows: 50px 500px 500px;
-         grid-template-areas: "nav-bar nav-bar"
-                              "item1 item2"
-                              "item3 item3";
-         background-color: #fff;
-         padding: 10px;
+        display: grid;
+        grid-auto-flow: row;
+        padding: 10px;
       }
+      /* css for nav-bar started */
       .nav-bar {
-         display: grid;
-         grid-auto-flow: column;
-         justify-content: space-between;
-         align-content: center;
-         grid-column: 1/3;
-         padding-bottom: 20px;
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+      }
+      .logo {
+        height: 40px;
+        width: 40px;
       }
       .nav-content {
-         display: grid;
-         grid-auto-flow: column;
-         gap: 30px;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 30px;
+        padding: 10px 0px;
       }
-
-      .nav-content >a {
-         text-decoration: none;
-         color: black;
-      }
-      .items {
-         align-self: center;
+      .nav-content > a {
+        text-decoration: none;
+        color: black;
       }
       .button {
-         background-color: #0fdb6b;
-         border-radius: 5px;
-         padding: 5px 70px;    
-         text-decoration: none;
-         color: black;    
+        background-color: #0fdb6b;
+        border-radius: 5px;
+        padding: 10px 70px;
+        text-decoration: none;
+        color: black;
+      }
+      /* css for nav-bar ended */
+
+      /* css for main started */
+      .main {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 0px;
       }
       .item1 {
-         padding: 40px;
-         display: grid;
-         align-content: center;
-      }
-      .item2 {
-         display: grid;
-         grid-template-columns: repeat(3, 1fr);
-      }
-      .image {
-         grid-column: 1/3;
-         width: 100%;
-         height: 500px;
+        padding: 40px;
+        display: grid;
+        align-content: center;
       }
       h1 {
          font-size: 60px;
          font-weight: lighter;
+
       }
       .item1 >a{
+         display: grid;
          width: 150px;
          text-decoration: none;
          color: white;
          background-color: black;
-         text-align: center;
+         align-content: center;
+         justify-content: center;
          margin-top: 30px;
          padding: 5px;
          position: relative;
       }
+      .item2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .image {
+        width: 421px;
+        height: 600px;
+        grid-column: 1/3;
+      }
       .yellow {
-         background-color: yellow;
+        background-color: yellow;
       }
-      .logo{
-         height: 40px;
-         width: 40px;
+      /* css for main ended */
+
+      /* css for footer started */
+      .footer {
+        display: grid;
+        grid-auto-flow: column;
+        background-color: #2b1e16;
+        height: 500px;
+        column-gap: 100px;
+        padding: 0px 80px 30px 80px;
       }
-      .item3 {
+      .item_1{
          display: grid;
-         grid-template-columns: repeat(3, 1fr);
-         grid-template-rows: 300px 100px 100px;
-         border: 1px solid black;
+         align-self: last baseline;
          justify-items: center;
-         align-items: center;
-         width: 200%;
-         background-color: #2b1e16;
-         column-gap: 60px;
+      }
+      .item_2{
+         display: grid;
+         align-self: last baseline;
+         justify-items: center;
+      }
+      .item_3{
+         display: grid;
+         align-self: last baseline;
+         justify-items: center;
       }
       .logos {
-         height: 100px;
-         width: 100px;
-         align-self: center;
+        height: 100px;
+        width: 100px;
+        border: 2px solid #aaa;
+        background-color: #aaa;
+        border-radius: 10px;
+        padding: 20px 30px;
       }
-   </style>
-</head>
-<body>
-   <div class="container">
+      .item-image {
+         display: grid;
+         justify-items: center;
+         padding: 20px;
+      }
+      .item-heading {
+         color: white;
+         font-size: 28px;
+         padding-bottom: 20px;
+      }
+      .item-content {
+         color: #865307;
+         font-size: 16px;
+         text-align: center;
+      }
+      /* css for footer ended */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- html for nav-bar -->
       <div class="nav-bar">
-         <img src=".\media\favicon.png" alt="Ooops! An error" class="logo">
-         <div class="nav-content">
-            <a target="_blank" href="#" class="items">Home</a>
-            <a target="_blank" href="#" class="items">About</a>
-            <a target="_blank" href="#" class="items">Contact</a>
-         </div>
-         <a href="#" target="_blank" class="button items">Login</a>
+        <img src=".\media\favicon.png" alt="Ooops! An error" class="logo" />
+        <div class="nav-content">
+          <a target="_blank" href="#" class="items">Home</a>
+          <a target="_blank" href="#" class="items">About</a>
+          <a target="_blank" href="#" class="items">Contact</a>
+        </div>
+        <a href="#" target="_blank" class="button items">Login</a>
       </div>
-      <div class="item1">
-         <h1>Healthy Food</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam necessitatibus incidunt esse magnam explicabo nam sunt tempora eveniet nostrum, fugiat temporibus, perferendis aut. Suscipit sapiente deserunt expedita officiis blanditiis, sint, ducimus odit nam nihil repellendus id qui illum enim eos necessitatibus sed nesciunt! Quam doloribus odit voluptates, sed a aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius voluptatibus cum. Eaque deleniti voluptate aspernatur suscipit quis, illo vero?</p>
-         <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank" rel="noopener noreferrer">Read More</a>
+
+      <!-- html for main -->
+      <div class="main">
+        <div class="item1">
+          <h1>Healthy Food</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            necessitatibus incidunt esse magnam explicabo nam sunt tempora
+            eveniet nostrum, fugiat temporibus, perferendis aut. Suscipit
+            sapiente deserunt expedita officiis blanditiis, sint, ducimus odit
+            nam nihil repellendus id qui illum enim eos necessitatibus sed
+            nesciunt! Quam doloribus odit voluptates, sed a aut. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Ipsa eius voluptatibus
+            cum. Eaque deleniti voluptate aspernatur suscipit quis, illo vero?
+          </p>
+          <a
+            href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+            target="_blank"
+            >Read More</a
+          >
+        </div>
+        <div class="item2">
+          <img
+            src=".\media\health-food.png"
+            alt="Ooops! An error"
+            class="image"
+          />
+          <div class="yellow"></div>
+        </div>
       </div>
-      <div class="item2">
-         <img src=".\media\health-food.png" alt="Ooops! An error" class="image">
-         <div class="yellow"></div>
+
+      <!-- html for footer -->
+      <div class="footer">
+        <div class="item_1">
+          <div class="item-image">
+            <img
+              src=".\media\no-min-order.png"
+              alt="Ooops! An error"
+              class="logos"
+            />
+          </div>
+          <div class="item-heading">No Mininmum Order</div>
+          <div class="item-content">
+            Order in for yourself of for the group, with no restrictions on
+            order value
+          </div>
+        </div>
+        <div class="item_2">
+          <div class="item-image">
+            <img
+              src=".\media\live-location.png"
+              alt="Ooops! An error"
+              class="logos"
+            />
+          </div>
+          <div class="item-heading">Live Order Tracking</div>
+          <div class="item-content">
+            Know where your order is all times, from the resturant to your
+            doorstep
+          </div>
+        </div>
+        <div class="item_3">
+          <div class="item-image">
+            <img
+              src=".\media\fast-delivery.png"
+              alt="Ooops! An error"
+              class="logos"
+            />
+          </div>
+          <div class="item-heading">Lightning-Fast Delivery</div>
+          <div class="item-content">
+            Experience Swiggy's super fast delivery for food delivered fresh &
+            on time
+          </div>
+        </div>
       </div>
-      <div class="item3">
-         <div class="item"><img src=".\media\no-min-order.png" alt="Ooops! An error" class="logos"></div>
-         <div class="item"><img src=".\media\live-location.png" alt="Ooops! An error" class="logos"></div>
-         <div class="item"><img src=".\media\fast-delivery.png" alt="Ooops! An error" class="logos"></div>
-         <div class="item">No Mininmum Order</div>
-         <div class="item">Live Order Tracking</div>
-         <div class="item">Lightning-Fast Delivery</div>
-         <div class="item">Order in for yourself of for the group, with no restrictions on order value</div>
-         <div class="item">Know where your order is all times, from the resturant to your doorstep</div>
-         <div class="item">Experience Swiggy's super fast delivery for food delivered fresh & on time</div>
-      </div>
-   </div>
-</body>
+    </div>
+  </body>
 </html>
