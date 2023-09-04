@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Grid Auto Row/Column</title>
+   <style>
+      .container {
+         display: grid;
+         grid-template-areas: "name email contact";
+         grid-template-columns: 100px 100px;
+         grid-template-rows: 100px 100px;
+         gap: 20px;
+         height: 400px;
+         grid-auto-rows: 200px;
+         grid-auto-columns: 200px;
+         border: 2px solid #aaa ;
+      }
+      .items {
+         border: 2px solid #caa ;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <div class="items">6</div>
+   </div>
+</body>
+</html>

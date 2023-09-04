@@ -3,13 +3,12 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Grid Gap</title>
+   <title>Grid Justify Content</title>
    <style>
       .container {
          display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         gap: 60px 70px;
-         
+         grid-template-columns: repeat(3, 100px);
+         justify-content: center;
       }
       .items {
          border: 1px solid #ccc;
@@ -17,6 +16,7 @@
    </style>
 </head>
 <body>
+   <h1>for aligning the whole rows horizontally </h1>
    <div class="container">
       <div class="items">1</div>
       <div class="items">2</div>
