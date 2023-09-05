@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .nav-bar {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        background-color: #242b2e;
+        position: sticky;
+        top: 0px;
+      }
+
+      @media screen and (min-width: 756px) {
+        .logo {
+          width: 5%;
+          margin-left: 2%;
+        }
+        .items {
+          display: flex;
+          align-items: center;
+          gap: 15%;
+          width: 30%;
+          color: wheat;
+          font-size: 20px;
+        }
+        .button {
+          display: flex;
+          border-radius: 5px;
+          color: wheat;
+          height: 10%;
+          margin-right: 50px;
+          font-size: 20px;
+          padding: 6px 40px 6px 40px;
+          background-color: #0072e1;
+          align-self: center;
+          text-decoration: none;
+        }
+      }
+      .button:hover {
+        padding: 10px 46px 10px 60px;
+      }
+      .small-screen {
+        display: none;
+      }
+
+      @media screen and (max-width: 756px) {
+        .small-screen {
+          display: flex;
+          flex-direction: column;
+          row-gap: 1px;
+          margin: 10px 5%;
+        }
+        .logo {
+          width: 8%;
+          margin-left: 5%;
+        }
+        .button,
+        .items {
+          display: none;
+        }
+        .nav-bar {
+          display: flex;
+          width: 35px;
+          height: 5px;
+          background-color: #ffffff;
+          margin: 1px 0;
+          border: 1px solid black;
+          align-content: center;
+        }
+        .main {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+      .main {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .image {
+        height: 120px;
+        width: 500px;
+        padding-bottom: 30px;
+      }
+      .sub-container_1 {
+        display: grid;
+        align-content: center;
+        row-gap: 20px;
+        padding: 0px 50px;
+      }
+      .video {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <img src=".\media\logo.png" alt="Ooops! An error" class="logo" />
+
+        <div class="items">
+          <div class="sub-items">Home</div>
+          <div class="sub-items">Blog</div>
+          <div class="sub-items">About</div>
+          <div class="sub-items">Contact</div>
+        </div>
+        <a href="#" target="_blank" class="button">Login</a>
+        <div class="small-screen">
+          <div class="nav-bar"></div>
+          <div class="nav-bar"></div>
+          <div class="nav-bar"></div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="sub-container_1">
+          <div
+            style="
+              color: black;
+              font-size: 30px;
+              font-weight: 300;
+              padding-bottom: 0px;
+            "
+          >
+            Say Hi To
+          </div>
+          <div
+            style="
+              color: #2297f7;
+              font-size: 60px;
+              padding: 0px 0px 12px 0px;
+              font-weight: 500;
+            "
+          >
+            One Card
+          </div>
+          <div style="color: #2297f7; font-size: 30px; padding-bottom: 10px">
+            Co-branded Card Issues :
+          </div>
+          <img src=".\media\banks_name.png" alt="Partner Banks" class="image" />
+          <div>
+            India's best metal credit card. Built with full-stack tech. Backed
+            by the principles of simplicity, transparency, and giving back
+            control to the user.
+          </div>
+        </div>
+        <div class="sub-container_2">
+          <video controls loop autoplay class="video">
+            <source src=".\media\video.mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

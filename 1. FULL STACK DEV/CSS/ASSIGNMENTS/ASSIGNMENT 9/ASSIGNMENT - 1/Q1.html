@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Q1</title>
+   <style>
+      .container {
+         display: flex;
+         width: 100%;
+         height: 100%;
+         justify-content: space-between;
+         background-color: #242b2e;
+         font-family: sans-serif;
+      }
+
+      @media screen and (min-width : 756px) {
+         .logo {
+            width: 5%;
+            margin-left: 2%;
+      }
+      .items {
+         display: flex;
+         align-items: center;
+         gap: 15%;
+         width: 30%;
+         color: wheat;
+         font-size: 20px;
+         
+      }
+      .button {
+         display: flex;
+         border-radius: 5px;
+         color: wheat;
+         height: 10%;
+         font-size: 20px;
+         margin-right: 4%;
+         padding: 6px 40px 6px 40px;
+         background-color: #0072e1;
+         align-self: center;
+         text-decoration: none;
+      }
+      .button:hover {
+         padding: 10px 46px 10px 60px;
+      }
+
+   }
+      .small-screen {
+         display: none;
+      }
+      @media screen and (max-width : 756px) {
+         .container {
+         padding: 2%;
+         }
+         .small-screen {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1px;
+            margin: 10px 5%;
+         }
+         .logo {
+            width: 8%;
+            margin-left: 5%;
+         }
+         .button , .items {
+            display: none;
+         }
+         .nav-bar {
+            display: flex;
+            width: 35px;
+            height: 5px;
+            background-color: #ffffff;
+            margin: 1px 0;
+            border: 1px solid black;
+            align-content: center;
+         }
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+         <img src=".\media\logo.png" alt="Ooops! An error" class="logo">
+
+         <div class="items">
+            <div class="sub-items">Home</div>
+            <div class="sub-items">Blog</div>
+            <div class="sub-items">About</div>
+            <div class="sub-items">Contact</div>
+         </div>
+   
+            <a href="#" target="_blank" class="button">Login</a>
+   
+         
+
+      <div class="small-screen">
+
+         <div class="nav-bar"></div>
+         <div class="nav-bar"></div>
+         <div class="nav-bar"></div>
+      </div>
+   </div>
+</body>
+</html>
