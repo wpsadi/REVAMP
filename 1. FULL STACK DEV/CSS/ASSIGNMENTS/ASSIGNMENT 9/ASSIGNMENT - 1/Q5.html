@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Q5</title>
-   <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q5</title>
+    <style>
       body {
-         background-color: #aaa;
+        background-color: #aaa;
       }
       h1 {
-         font-size: 40px;
-         margin-bottom: 20px;
-         text-align: center;
-         text-decoration: underline;
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        text-decoration: underline;
       }
       .container {
-         height: 90%;
-         width: 100%;
-         display: grid;
-         grid-template-columns: repeat(3, 1fr);
-         justify-content: center;
-         margin-left: 8px;
+        height: 90%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        margin-left: 8px;
       }
       .image {
-         height: 90%;
-         width: 90%;
-         border: 5px solid black;
-         border-radius: 20px;
+        height: 90%;
+        width: 90%;
+        border: 5px solid black;
+        border-radius: 20px;
       }
-      @media screen and (max-width : 756px) {
-         h1 {
-         text-align: center;
-         text-decoration: underline;
+      @media screen and (max-width: 756px) {
+        h1 {
+          text-align: center;
+          text-decoration: underline;
+        }
+        .container {
+          height: 100%;
+          grid-template-columns: repeat(1, 1fr);
+          justify-content: center;
+        }
       }
-         .container {
-            grid-template-columns: repeat(1, 1fr);
-            justify-content: center;
-         }
-      }
-   </style>
-</head>
-<body>
-   <h1>Random Images</h1>
-   <div class="container">
-      <div class="items"><img src=".\media\random_1.jpg" alt="random_images" class="image"></div>
-      <div class="items"><img src=".\media\random_2.jpg" alt="random_images" class="image"></div>
-      <div class="items"><img src=".\media\random_3.jpg" alt="random_images" class="image"></div>
-      <div class="items"><img src=".\media\random_4.jpg" alt="random_images" class="image"></div>
-      <div class="items"><img src=".\media\random_5.jpg" alt="random_images" class="image"></div>
-      <div class="items"><img src=".\media\random_6.jpg" alt="random_images" class="image"></div>
-   </div>
-</body>
+    </style>
+  </head>
+  <body>
+    <h1>Random Images</h1>
+    <div class="container">
+      <div class="items">
+        <img src=".\media\random_1.jpg" alt="random_images" class="image" />
+      </div>
+      <div class="items">
+        <img src=".\media\random_2.jpg" alt="random_images" class="image" />
+      </div>
+      <div class="items">
+        <img src=".\media\random_3.jpg" alt="random_images" class="image" />
+      </div>
+      <div class="items">
+        <img src=".\media\random_4.jpg" alt="random_images" class="image" />
+      </div>
+      <div class="items">
+        <img src=".\media\random_5.jpg" alt="random_images" class="image" />
+      </div>
+      <div class="items">
+        <img src=".\media\random_6.jpg" alt="random_images" class="image" />
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3</title>
+    <style>
+      body {
+        font-family: monospace;
+      }
+      .container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+      }
+      .navigation {
+        display: flex;
+        flex-direction: row;
+        background-color: #242b2e;
+        justify-content: space-between;
+        position: sticky;
+        top: 0px;
+      }
+      .logo {
+        width: 5%;
+        margin-left: 2%;
+      }
+      .main {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+      }
+      .image {
+        height: 80%;
+        width: 80%;
+        padding-bottom: 30px;
+      }
+      .video {
+        height: 100%;
+        width: 100%;
+      }
+      .footer {
+        height: 500px;
+        color: wheat;
+        display: flex;
+        flex-direction: column;
+        background-color: #000000;
+        justify-content: center;
+        font-size: 35px;
+      }
+      .item {
+        text-align: center;
+      }
+      .item_1 {
+        color: #5457b6;
+        font-size: 60px;
+        margin-bottom: 30px;
+        word-wrap: normal;
+      }
+      @media screen and (min-width: 756px) {
+        .items {
+          display: flex;
+          align-items: center;
+          gap: 15%;
+          width: 30%;
+          color: wheat;
+          font-size: 20px;
+        }
+        .button {
+          display: flex;
+          border-radius: 5px;
+          color: wheat;
+          height: 10%;
+          margin-right: 50px;
+          font-size: 20px;
+          padding: 6px 40px 6px 40px;
+          background-color: #0072e1;
+          align-self: center;
+          text-decoration: none;
+        }
+        .sub-container_1 {
+          display: grid;
+          align-content: center;
+          row-gap: 20px;
+          padding: 0px 50px;
+        }
+        .button:hover {
+          padding: 10px 46px 10px 60px;
+        }
+        .small-screen {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 756px) {
+        * {
+          margin-bottom: 20px;
+        }
+        .small-screen {
+          display: flex;
+          flex-direction: column;
+          row-gap: 1px;
+          margin: 10px 5%;
+        }
+        .logo {
+          width: 10%;
+          margin-left: 5%;
+          margin-bottom: 0px;
+        }
+        .button,
+        .items {
+          display: none;
+        }
+        .navigation {
+          margin-bottom: 100px;
+        }
+        .nav-bar {
+          display: flex;
+          width: 35px;
+          height: 5px;
+          background-color: #ffffff;
+          margin: 1px 0;
+          border: 1px solid black;
+          align-content: center;
+        }
+        .main {
+          display: flex;
+          flex-direction: column;
+        }
+        .video {
+          padding-top: 80px;
+        }
+        .footer {
+          background-color: white;
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <img src=".\media\logo.png" alt="Ooops! An error" class="logo" />
+        <div class="items">
+          <div class="sub-items">Home</div>
+          <div class="sub-items">Blog</div>
+          <div class="sub-items">About</div>
+          <div class="sub-items">Contact</div>
+        </div>
+        <a href="#" target="_blank" class="button">Login</a>
+        <div class="small-screen">
+          <div class="nav-bar"></div>
+          <div class="nav-bar"></div>
+          <div class="nav-bar"></div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="sub-container_1">
+          <div
+            style="
+              color: black;
+              font-size: 30px;
+              font-weight: 300;
+              padding-bottom: 0px;
+            "
+          >
+            Say Hi To
+          </div>
+          <div
+            style="
+              color: #2297f7;
+              font-size: 60px;
+              padding: 0px 0px 12px 0px;
+              font-weight: 500;
+            "
+          >
+            One Card
+          </div>
+          <div style="color: #2297f7; font-size: 30px; padding-bottom: 10px">
+            Co-branded Card Issues :
+          </div>
+          <img src=".\media\banks_name.png" alt="Partner Banks" class="image" />
+          <div>
+            India's best metal credit card. Built with full-stack tech. Backed
+            by the principles of simplicity, transparency, and giving back
+            control to the user.
+          </div>
+        </div>
+        <div class="sub-container_2">
+          <video controls loop autoplay class="video">
+            <source src=".\media\video.mp4" />
+          </video>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="item item_1">No Hidden Fees Ever</div>
+        <div class="item item_2">No Joining Fees.</div>
+        <div class="item item_3">No Annual Fees.</div>
+        <div class="item item_4">No Rewards Redemption Fees.</div>
+      </div>
+    </div>
+  </body>
+</html>
