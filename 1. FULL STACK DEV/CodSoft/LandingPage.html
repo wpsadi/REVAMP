@@ -1,16 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <style>
+        .part1 {
+            background-image: linear-gradient(to right, #FCAE63, #E24EB0);
+            display: grid;
+            font-size: large;
+            grid-auto-flow: column;
+            justify-content: space-evenly;
+            padding: 5px;
+            
+        }
+
+        .part1-parts {
+            display: inline;
+        }
+
+        .navbar_part1 {
+            color: white;
+        }
+
+        .request {
+            border: 2px solid white;
+            padding: 1px 30px;
+            border-radius: 40px;
+        }
+
+        .part2 {
+            background-color: whitesmoke;
+            display: grid;
+            flex-wrap: wrap;
+            font-size: large;
+            grid-auto-flow: column;
+            justify-content: space-evenly;
+            padding: 9px;
+            align-items: center;
+        }
+
+        .fa-magnifying-glass {
+            display: grid;
+            align-items: center;
+            padding: 6px;
+        }
+
+        .search {
+            padding: 0px;
+            height: 40px;
+            background-color: black;
+            display: grid;
+        }
+
+
+        .icon {
+            display: grid;
+            grid-auto-flow: column;
+            gap: 20px;
+        }
+        .options {
+            /* display: grid;
+            grid-auto-flow: column; */
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            gap: 20px;
+        }
+        .buy-now {
+            padding: 8px;
+            border-radius:6px;
+            /* height: 40px; */
+            background-color: #FCAE63;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav class="part1">
-            
+            <div class="part1-parts socialmedia_handles">
+                <span class="navbar_part1 space">|</span>
+                <i class="navbar_part1 fa-brands fa-twitter"></i>
+                <span class="navbar_part1 space">|</span>
+                <i class="navbar_part1 fa-brands fa-instagram"></i>
+                <span class="navbar_part1 space">|</span>
+                <i class="navbar_part1 fa-brands fa-facebook"></i>
+                <span class="navbar_part1 space">|</span>
+                <i class="navbar_part1 fa-brands fa-youtube"></i>
+                <span class="navbar_part1 space">|</span>
+                <i class="navbar_part1 fa-brands fa-whatsapp"></i>
+                <span class="navbar_part1 space">|</span>
+                <i class="navbar_part1 fa-brands fa-linkedin"></i>
+                <span class="navbar_part1 space">|</span>
+            </div>
+            <div class="part1-parts contacting_details">
+                <i class="navbar_part1 part1-parts1 fa-solid fa-phone"></i>
+                <span class="navbar_part1 part1-parts1 contact-number">+12 345-6789</span>
+                <span class="navbar_part1 part1-parts1 space">|</span>
+                <i class="navbar_part1 part1-parts1 fa-solid fa-house"></i>
+                <span class="navbar_part1 part1-parts1 contact-email">landingpage@gmail.com</span>
+            </div>
+            <div class="part1-parts scheduling_appointment">
+                <span class="navbar_part1 request">Request an Appointment</span>
+            </div>
         </nav>
-        <nav class="part2"></nav>
+        <nav class="part2">
+            <div class="icon">
+                <i class="fa-solid fa-newspaper" style="color: #FCAE63;"></i>
+                <span>LANDING PAGE</span>
+            </div>
+            <div class="options">
+                <span>Home</span>
+                <span>Blog</span>
+                <span>Page</span>
+                <span>Services</span>
+                <span>Testimonials</span>
+                <span>Contact</span>
+                <span class="buy-now">Buy Now</span>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+            </div>
+        </nav>
     </header>
 </body>
+
 </html>
